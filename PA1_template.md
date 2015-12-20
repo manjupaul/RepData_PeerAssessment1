@@ -26,6 +26,8 @@ head(steps.date)
 barplot(steps.date$steps, names.arg=steps.date$date, ylim=c(0, 25000),xlab="date",ylab="sum(steps)")
 
 ```
+![Histogram of total steps](figure/Chunk3.png) 
+
 
 - Mean of total number of steps taken per day
 
