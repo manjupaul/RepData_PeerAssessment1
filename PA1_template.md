@@ -49,6 +49,7 @@ median(steps.date$steps)
 steps.interval <- aggregate(steps ~ interval, activity, mean)
 plot(steps.interval, type='l')
 ```
+![Average Daily pattern](figure/chunk6.png) 
 
 - The 5-minute interval contains the maximum number of steps
 
@@ -79,6 +80,7 @@ head(activity.clean)
 steps.date <- aggregate(steps ~ date, activity.clean, sum)
 hist(steps.date$steps,main=" ",breaks=10,xlab="After Imputate NA-Total Number of Steps Taken Daily")
 ```
+![Histogram of total steps each day](figure/chunk10.png) 
 
 - Mean of total number of steps taken per day
 
@@ -124,3 +126,5 @@ xyplot(steps ~ interval | dayType, data=steps.interval, layout=c(1,2), type='l',
        xlab=" Interval",
        ylab="Number of Steps Taken")
 ```
+![time series plot](figure/chunk14.png) 
+
